@@ -1,0 +1,132 @@
+.App {
+  text-align: center;
+}
+
+.image-holder {
+  background-image: url('https://media.discordapp.net/attachments/715934007283548241/725414921659088936/option-1-header-bg.jpg');
+  width: 100vw ;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center; 
+  background-size: cover; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-header {
+  color: white;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  align-items: center;
+}
+
+
+.desktop-menu {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 5rem;
+  text-transform: uppercase;
+  flex-direction: row;
+  font-size: 1.3em;
+  font-weight: 500;
+  width: 52vw;
+}
+
+.dropdown {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+h4 {
+  color: #fec503;
+  font-size: 25px;
+  font-family: cursive;
+  margin-left: 5rem;
+}
+
+.main-container {
+  padding-top: 3rem;
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem; 
+  text-transform: uppercase !important; 
+  color: white;
+}
+
+h5 {
+  font-style: italic;
+  font-family: "Montserrat", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.more-btn {
+  color: white;
+  background-color: #ffd651;
+  border-color: #ffd651;
+  border-radius: 3px;
+  padding: 1.25rem 2.5rem;
+  font-size: 1.125rem;
+  font-weight: 750;
+  text-transform: uppercase !important;
+}
+
+.more-btn:hover {
+  color: white;
+  background-color: #fec810;
+  border-color: #fec810;
+}
+
+ul {
+  font-size: 45px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+@media (max-width:991px) {
+  .main-header {
+    background-color: #212529;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
+  .dropdown {
+    display: initial;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+    background-color: #ffd651;
+    border-color: #ffd651;
+    border-radius: 3px;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase !important;
+  }
+
+  .mobile-menu {
+    display: initial;
+    width: 100vw;
+    height: fit-content;
+    background-color: #212529;
+    position: fixed;
+    top: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+  }
+
+}
